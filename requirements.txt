@@ -1,0 +1,19 @@
+# ============================================================
+# BioSyn qPCR CSV Analyzer — Python Dependencies
+# Python 3.10+ required
+# ============================================================
+
+# Numerical computation (standard curve linear regression)
+numpy>=1.26.0
+
+# XLSX input reading and multi-sheet report export
+openpyxl>=3.1.0
+
+# ----------------------------------------------------------
+# Optional: exact statistical tests (MVP uses stdlib + numpy)
+# scipy>=1.12.0
+#
+# Core data cleaning, replicate QC, ΔCt/ΔΔCt logic
+# uses only Python standard library:
+#   argparse, csv, dataclasses, logging, math, pathlib, statistics, typing
+# ============================================================

@@ -1,0 +1,5 @@
+"""BioSyn qPCR CSV Analyzer — local-first qPCR data analysis."""
+__version__ = "1.0.0"
+__author__ = "BioSyn Inc."
+__license__ = "MIT"
+__url__ = "https://biosyn-inc.com/"

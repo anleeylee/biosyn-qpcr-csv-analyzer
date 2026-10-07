@@ -1,0 +1,24 @@
+# BioSyn qPCR CSV Analyzer — Default Config
+qc:
+  cv_warn_threshold: 1.0        # % — flag replicates with CV above this
+  outlier_z_threshold: 2.0      # Z-score for outlier detection
+  min_replicates: 2              # fewer than this → REVIEW
+
+analysis:
+  reference_gene: ""            # e.g. GAPDH, ACTB
+  calibrator_group: ""           # e.g. Control, Untreated
+  fold_change_model: ddct_2neg  # ddct_2neg | efficiency_corrected
+
+standard_curve:
+  enabled: false
+  # Input columns: concentration, ct
+
+plate:
+  plate_type: 96                # 96 | 384
+  # Well format: A1-H12 (96) or A1-P24 (384)
+
+export:
+  formats: [xlsx, html]
+  include_raw_data_sheet: true
+  include_methods_sheet: true
+  include_excluded_data: true
